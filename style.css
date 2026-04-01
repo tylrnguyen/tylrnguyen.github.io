@@ -139,6 +139,11 @@ section {
   margin-bottom: 15px;
 }
 
+.pantry-pal-image {
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
