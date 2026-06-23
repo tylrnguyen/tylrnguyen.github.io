@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Media Portfolio | Tyler Nguyen</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .media-hero { padding-bottom: 80px; text-align: center; }
+    .media-hero h1 { font-size: 3rem; margin-bottom: 15px; }
+    .media-hero p { max-width: 760px; margin: 0 auto; font-size: 1.15rem; }
+    .eyebrow { color: #847464; font-weight: 900; letter-spacing: 0.08em; margin-bottom: 12px; text-transform: uppercase; }
+    .media-section { padding-top: 60px; }
+    .section-heading { margin-bottom: 30px; }
+    .section-heading p { color: #555; font-size: 1.05rem; max-width: 780px; margin-top: 8px; }
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+    .media-card { background-color: #f4f4f4; border-radius: 14px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18); overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .media-card:hover { transform: translateY(-4px); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); }
+    .media-thumbnail { align-items: center; aspect-ratio: 16 / 10; background: linear-gradient(135deg, #f0ebe4, #c6d8e6); display: flex; justify-content: center; width: 100%; }
+    .media-thumbnail img, .media-thumbnail video { height: 100%; max-width: none; object-fit: cover; width: 100%; }
+    .media-thumbnail span { color: #333; font-size: 1.4rem; font-weight: 900; }
+    .video-placeholder { background: linear-gradient(135deg, #ececec, #b7c7d6); }
+    .social-placeholder { background: linear-gradient(135deg, #f4f4f4, #d7c5b3); }
+    .design-placeholder { background: linear-gradient(135deg, #e9eef3, #cfc7bd); }
+    .media-info { padding: 22px; }
+    .media-category { color: #847464; font-size: 0.85rem; font-weight: 900; letter-spacing: 0.08em; margin-bottom: 8px; text-transform: uppercase; }
+    .media-info h3 { margin-bottom: 12px; }
+    .media-info p { margin-bottom: 14px; }
+    .media-link { color: #847464; font-weight: bold; text-decoration: none; }
+    .media-link:hover { color: #8aaecc; }
+    @media (max-width: 800px) {
+      section { padding: 80px 24px; }
+      .top-bar { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .top-nav ul { flex-wrap: wrap; gap: 16px; }
+      .top-nav li { margin-left: 0; }
+      .top-nav a { font-size: 18px; }
+      .profile-icon a { font-size: 22px; }
+      .media-hero h1 { font-size: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="profile-icon"><a href="index.html#about"> Tyler Nguyen </a></div>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="media-styled.html">Media</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="media-hero" class="media-hero">
+      <p class="eyebrow">Photo, video, and creative editing</p>
+      <h1>Digital Media Portfolio</h1>
+      <p>A collection of photography, short-form video, event media, and creative edits that blend visual storytelling with technical execution.</p>
+    </section>
+
+    <section id="media-gallery" class="media-section">
+      <div class="section-heading">
+        <h2>Selected Media Work</h2>
+        <p>Replace the sample thumbnails, titles, and links below with your own edited photos, video reels, and project pages.</p>
+      </div>
+
+      <div class="media-grid">
+        <article class="media-card">
+          <div class="media-thumbnail"><span>Photo</span></div>
+          <div class="media-info">
+            <p class="media-category">Photography</p>
+            <h3>Portrait Photography Series</h3>
+            <p>Captured and edited a portrait set focused on lighting, framing, color balance, and clean post-production.</p>
+            <p><strong>Tools:</strong> Lightroom, Photoshop</p>
+            <a href="#" class="media-link">View gallery</a>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-thumbnail video-placeholder"><span>Video</span></div>
+          <div class="media-info">
+            <p class="media-category">Video Editing</p>
+            <h3>Event Recap Video</h3>
+            <p>Edited a short-form recap by selecting key footage, syncing cuts to music, adding transitions, and shaping the pacing for social platforms.</p>
+            <p><strong>Tools:</strong> Premiere Pro, After Effects, CapCut</p>
+            <a href="#" class="media-link">Watch video</a>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-thumbnail social-placeholder"><span>Social</span></div>
+          <div class="media-info">
+            <p class="media-category">Social Media</p>
+            <h3>Short-Form Sports Edit</h3>
+            <p>Created a high-energy edit optimized for vertical viewing, using quick cuts, captions, music timing, and motion-driven transitions.</p>
+            <p><strong>Tools:</strong> Premiere Pro, CapCut, Photoshop</p>
+            <a href="#" class="media-link">Watch reel</a>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="media-thumbnail design-placeholder"><span>Design</span></div>
+          <div class="media-info">
+            <p class="media-category">Creative Design</p>
+            <h3>Digital Graphics & Visual Assets</h3>
+            <p>Designed visual assets for online content, combining layout, typography, image treatment, and brand-consistent styling.</p>
+            <p><strong>Tools:</strong> Photoshop, Illustrator, Canva</p>
+            <a href="#" class="media-link">View designs</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Tyler Nguyen. All Rights Reserved.</p></footer>
+</body>
+</html>
